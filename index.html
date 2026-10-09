@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vibandi LLC</title>
+<meta name="description" content="Vibandi LLC is a parent company for a growing family of ventures, starting with technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow column; a hero whose right side is the company's family tree, then divisions, about, contact. */
+:root {
+  --bg: #f2f4f1;
+  --surface: #ffffff;
+  --ink: #15211e;
+  --muted: #56645f;
+  --line: #d3dad5;
+  --accent: #1f6b5c;
+  --brass: #b8862b;
+  --brass-soft: #f3e7cf;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --wrap: 68rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1614; --surface: #17211e; --ink: #e8eeeb; --muted: #9aaaa4;
+    --line: #2a3733; --accent: #5cc0a8; --brass: #e0b062; --brass-soft: #3a2f1c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1614; --surface: #17211e; --ink: #e8eeeb; --muted: #9aaaa4;
+  --line: #2a3733; --accent: #5cc0a8; --brass: #e0b062; --brass-soft: #3a2f1c;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 1.0625rem/1.65 var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: var(--wrap); margin: 0 auto; padding-inline: clamp(1rem, 4vw, 2rem); }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.1; text-wrap: balance; margin: 0; }
+p { margin: 0; }
+.eyebrow {
+  font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
+}
+
+/* Header */
+header.site {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: .9rem; }
+.brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--ink); }
+.brand-mark { width: 28px; height: 28px; flex: none; }
+.brand-name { font-family: var(--display); font-weight: 700; font-size: 1.2rem; letter-spacing: -.01em; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: clamp(.9rem, 3vw, 1.8rem); }
+nav a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: .95rem; }
+nav a:hover { color: var(--ink); }
+
+/* Hero */
+.hero { padding-block: clamp(3rem, 8vw, 6rem) clamp(2.5rem, 6vw, 4.5rem); }
+.hero .wrap { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.hero h1 { font-size: clamp(2.6rem, 6.5vw, 4.6rem); font-weight: 700; letter-spacing: -.03em; margin-block: .8rem 1.2rem; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero .lede { color: var(--muted); font-size: 1.15rem; max-width: 34rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+.btn {
+  display: inline-flex; align-items: center; gap: .4rem; padding: .75rem 1.25rem; border-radius: 999px;
+  font: 600 .95rem var(--body); text-decoration: none; border: 1px solid transparent; cursor: pointer;
+}
+.btn-primary { background: var(--ink); color: var(--bg); }
+.btn-primary:hover { background: var(--accent); }
+.btn-ghost { border-color: var(--line); color: var(--ink); background: transparent; }
+.btn-ghost:hover { border-color: var(--ink); }
+
+/* Family tree */
+.tree { min-width: 0; }
+.tree-root {
+  margin: 0 auto; width: max-content; max-width: 100%;
+  background: var(--ink); color: var(--bg); border-radius: 10px; padding: .7rem 1.2rem;
+  font-family: var(--display); font-weight: 700; text-align: center;
+}
+.tree-root small { display: block; font-family: var(--body); font-weight: 500; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; opacity: .7; }
+.tree-stem { width: 2px; height: 1.5rem; background: var(--line); margin: 0 auto; }
+.tree-branches { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; position: relative; padding-top: 1.5rem; }
+.tree-branches::before {
+  content: ""; position: absolute; top: 0; left: 16.66%; right: 16.66%; height: 2px; background: var(--line);
+}
+.node { position: relative; text-align: center; min-width: 0; }
+.node::before { content: ""; position: absolute; top: -1.5rem; left: 50%; width: 2px; height: 1.5rem; background: var(--line); transform: translateX(-1px); }
+.node-box {
+  border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: .75rem .5rem;
+  font-weight: 600; font-size: .92rem;
+}
+.node-box span { display: block; font-weight: 500; font-size: .74rem; color: var(--muted); margin-top: .15rem; }
+.node.is-next .node-box { border-color: var(--accent); }
+.node.is-open .node-box { border-style: dashed; background: transparent; color: var(--muted); }
+
+/* Sections */
+section { padding-block: clamp(3rem, 7vw, 5rem); }
+section + section { border-top: 1px solid var(--line); }
+.section-head { display: grid; gap: .6rem; margin-bottom: 2.25rem; max-width: 40rem; }
+.section-head h2 { font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 700; letter-spacing: -.02em; }
+.section-head p { color: var(--muted); }
+
+/* Divisions */
+.divisions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.division {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 1.5rem;
+  display: flex; flex-direction: column; gap: .75rem; min-width: 0;
+}
+.division.is-open { background: transparent; border-style: dashed; }
+.division-top { display: flex; justify-content: space-between; align-items: center; gap: .5rem; }
+.division-icon { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; background: var(--bg); color: var(--accent); }
+.division-icon svg { width: 22px; height: 22px; }
+.status {
+  font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  padding: .25rem .6rem; border-radius: 999px; background: var(--brass-soft); color: var(--brass); white-space: nowrap;
+}
+.status.planned { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+.division h3 { font-size: 1.3rem; font-weight: 700; }
+.division p { color: var(--muted); font-size: .98rem; }
+
+/* About */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); }
+.about-copy { display: grid; gap: 1rem; max-width: 36rem; min-width: 0; }
+.principles { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.1rem; min-width: 0; }
+.principles li { display: grid; gap: .2rem; padding-left: 1rem; border-left: 2px solid var(--line); }
+.principles strong { font-weight: 600; }
+.principles span { color: var(--muted); font-size: .98rem; }
+
+/* Contact */
+.contact {
+  background: var(--ink); color: var(--bg); border-radius: 18px;
+  padding: clamp(1.75rem, 5vw, 3rem); display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center;
+}
+.contact h2 { font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 700; letter-spacing: -.02em; }
+.contact p { opacity: .8; margin-top: .6rem; }
+.contact-card { display: grid; gap: .9rem; min-width: 0; }
+.contact-row { display: grid; gap: .15rem; }
+.contact-row .eyebrow { color: inherit; opacity: .65; }
+.contact-row .value { font-size: 1.1rem; font-weight: 600; overflow-wrap: anywhere; user-select: all; }
+.contact-row a.value { color: inherit; text-decoration: none; }
+.copy-btn { justify-self: start; background: transparent; color: inherit; border: 1px solid color-mix(in srgb, var(--bg) 35%, transparent); }
+.copy-btn:hover { border-color: var(--bg); }
+
+footer { padding-block: 2rem 3rem; color: var(--muted); font-size: .9rem; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
+
+@media (max-width: 860px) {
+  .hero .wrap, .about-grid, .contact { grid-template-columns: 1fr; }
+  .divisions { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  nav ul { gap: .8rem; }
+  nav a { font-size: .88rem; }
+  .brand-name { font-size: 1.05rem; }
+  .node-box { font-size: .8rem; padding: .6rem .3rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Vibandi home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="var(--ink)"/>
+        <path d="M8 9 L16 23 L24 9" fill="none" stroke="var(--bg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="16" cy="9" r="2.2" fill="var(--brass)"/>
+      </svg>
+      <span class="brand-name">Vibandi</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#divisions">Divisions</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Vibandi LLC</p>
+        <!-- EDIT: main headline -->
+        <h1>One company. <em>Many ventures.</em></h1>
+        <!-- EDIT: one or two sentences about what Vibandi is -->
+        <p class="lede">Vibandi is the parent company for a growing family of businesses. Each division has its own focus, and all of them share the same standards and the same name behind them.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#divisions">See our divisions</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="tree" aria-label="How Vibandi is organized">
+        <div class="tree-root"><small>Parent company</small>Vibandi LLC</div>
+        <div class="tree-stem"></div>
+        <div class="tree-branches">
+          <div class="node is-next"><div class="node-box">Technology<span>Coming soon</span></div></div>
+          <div class="node"><div class="node-box">Media<span>Planned</span></div></div>
+          <div class="node is-open"><div class="node-box">Next venture<span>Open</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="divisions">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Divisions</p>
+        <h2>Where Vibandi is headed</h2>
+        <p>Each line of business runs as its own division under Vibandi LLC. Here is what is in the works.</p>
+      </div>
+
+      <div class="divisions">
+        <!-- EDIT: Technology division -->
+        <article class="division">
+          <div class="division-top">
+            <div class="division-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 7 3 12 8 17"/><polyline points="16 7 21 12 16 17"/><line x1="13.5" y1="5" x2="10.5" y2="19"/></svg>
+            </div>
+            <span class="status">Coming soon</span>
+          </div>
+          <h3>Vibandi Technology</h3>
+          <p>Software, digital products and technology services. Our first division, currently being built.</p>
+        </article>
+
+        <!-- EDIT: Media division -->
+        <article class="division">
+          <div class="division-top">
+            <div class="division-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <span class="status planned">Planned</span>
+          </div>
+          <h3>Vibandi Media</h3>
+          <p>Social media channels and content, brought together under the Vibandi name.</p>
+        </article>
+
+        <!-- EDIT: future ventures -->
+        <article class="division is-open">
+          <div class="division-top">
+            <div class="division-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <span class="status planned">Open</span>
+          </div>
+          <h3>Future ventures</h3>
+          <p>Vibandi is built to grow. New businesses can join as their own divisions as they launch.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <p class="eyebrow">About</p>
+        <h2 style="font-size: clamp(1.9rem, 4vw, 2.6rem); letter-spacing: -.02em;">About Vibandi</h2>
+        <!-- EDIT: your story -->
+        <p>Vibandi LLC was founded to be a single home for several businesses. Instead of starting a new company for every idea, each venture becomes a division of Vibandi, with its own focus and the shared backing of one organization.</p>
+        <p>Technology is the first division. Others, including media and social channels, will follow as they launch.</p>
+      </div>
+      <!-- EDIT: what Vibandi stands for -->
+      <ul class="principles">
+        <li><strong>Built to last</strong><span>Every venture is started with the long term in mind.</span></li>
+        <li><strong>One standard across every division</strong><span>Whatever the business, the same care goes into it.</span></li>
+        <li><strong>Room to grow</strong><span>The company is set up so new ventures can join without starting over.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <h2>Let's talk</h2>
+          <p>For partnerships, questions or anything else, send us a note and we'll get back to you.</p>
+        </div>
+        <div class="contact-card">
+          <!-- EDIT: replace with your real email address -->
+          <div class="contact-row">
+            <span class="eyebrow">Email</span>
+            <a class="value" id="contact-email" href="mailto:hello@vibandi.com">hello@vibandi.com</a>
+          </div>
+          <!-- EDIT: replace with your city/state, or delete this block -->
+          <div class="contact-row">
+            <span class="eyebrow">Based in</span>
+            <span class="value">United States</span>
+          </div>
+          <button class="btn copy-btn" id="copy-email" type="button">Copy email</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> Vibandi LLC. All rights reserved.</span>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const btn = document.getElementById('copy-email');
+  btn.addEventListener('click', () => {
+    const email = document.getElementById('contact-email').textContent.trim();
+    const done = () => { btn.textContent = 'Copied'; setTimeout(() => btn.textContent = 'Copy email', 1800); };
+    try {
+      navigator.clipboard.writeText(email).then(done, () => selectEmail());
+    } catch (e) { selectEmail(); }
+    function selectEmail() {
+      const r = document.createRange();
+      r.selectNodeContents(document.getElementById('contact-email'));
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    }
+  });
+</script>
+</body>
+</html>
