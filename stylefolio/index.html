@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TheStyleFolio</title>
+<meta name="description" content="TheStyleFolio is a wardrobe app for iPhone: catalog your closet, build looks, plan outfits for events, and keep a style diary.">
+<link rel="icon" href="data:image/webp;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Layout: a fashion-magazine page — masthead hero with a live phone, a walkthrough synced to the phone,
+   a feature rack, a download "tag", and a care-label footer. Single light look, matching the app. */
+:root {
+  --paper: #F3F0EC;      /* page ground, from the logo's paper */
+  --card: #FFFFFF;
+  --ink: #2A1E1F;        /* app text */
+  --muted: #6B5F5E;      /* app secondary text */
+  --wine: #7F1D2D;       /* app accent */
+  --wine-deep: #4E101B;
+  --line: #E4DCD8;
+  --blush: #EFE6E3;
+  --display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --body: "Jost", "Futura", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  --app: -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--body); font-size: 17px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--wine); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--wine); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 500; text-wrap: balance; margin: 0; line-height: 1.08; }
+.eyebrow { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--wine); font-weight: 600; }
+p { margin: 0; }
+
+/* Header */
+header.top { padding-block: 18px; }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand img { width: 38px; height: 38px; border-radius: 10px; box-shadow: 0 1px 3px rgba(42,30,31,.18); }
+.brand span { font-family: var(--display); font-size: 21px; font-weight: 700; letter-spacing: .01em; }
+nav.links { display: flex; gap: 22px; font-size: 15px; }
+nav.links a { color: var(--ink); text-decoration: none; }
+nav.links a:hover { color: var(--wine); }
+@media (max-width: 640px) { nav.links a:not(.cta-link) { display: none; } }
+.cta-link { font-weight: 600; color: var(--wine) !important; }
+
+/* Hero */
+.hero { padding-block: 28px 64px; }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 48px; align-items: center; }
+@media (max-width: 880px) { .hero .wrap { grid-template-columns: minmax(0, 1fr); } }
+.masthead { font-size: clamp(44px, 7vw, 88px); letter-spacing: -.01em; color: var(--ink); }
+.masthead em { font-style: italic; color: var(--wine); }
+.lede { margin-top: 22px; font-size: 19px; color: var(--muted); max-width: 34em; }
+.issue { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 22px; font-size: 13px; color: var(--muted); letter-spacing: .04em; }
+.issue b { color: var(--ink); font-weight: 600; }
+.actions { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 999px; font: 600 16px var(--body); text-decoration: none; border: 1px solid transparent; cursor: pointer; }
+.btn-primary { background: var(--wine); color: #fff; }
+.btn-primary:hover { background: var(--wine-deep); }
+.btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn-ghost:hover { border-color: var(--wine); color: var(--wine); }
+.btn svg { width: 18px; height: 18px; }
+.note { margin-top: 14px; font-size: 14px; color: var(--muted); }
+
+/* Phone */
+.stage { display: flex; justify-content: center; }
+.phone {
+  width: 300px; max-width: 100%; aspect-ratio: 300 / 620; border-radius: 46px; padding: 12px;
+  background: #1D1617; box-shadow: 0 30px 60px -20px rgba(78,16,27,.45), 0 0 0 1px #3A2E2F inset;
+  position: relative;
+}
+.screen { position: relative; width: 100%; height: 100%; border-radius: 35px; overflow: hidden; background: #FAF7F6; font-family: var(--app); color: #2A1E1F; }
+.island { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 92px; height: 26px; border-radius: 20px; background: #1D1617; z-index: 5; }
+.status { display: flex; justify-content: space-between; padding: 14px 26px 0; font-size: 12px; font-weight: 600; height: 44px; }
+.view { position: absolute; inset: 44px 0 0; padding: 6px 16px 0; opacity: 0; transform: translateY(8px); transition: opacity .45s ease, transform .45s ease; pointer-events: none; }
+.view.on { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .view { transition: none; transform: none; } }
+.navbar { display: flex; justify-content: space-between; align-items: center; font-size: 13px; padding: 4px 0 10px; }
+.navbar b { font-size: 14px; }
+.navbar .act { color: #7F1D2D; font-weight: 700; }
+.navbar .dim { color: #7F1D2D; }
+.app-title { font-size: 21px; font-weight: 800; display: flex; align-items: center; gap: 10px; padding: 2px 0 10px; }
+.app-title i { width: 16px; height: 2px; background: #2A1E1F; display: inline-block; box-shadow: 0 5px 0 #2A1E1F, 0 -5px 0 #2A1E1F; }
+.label { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #6B5F5E; margin: 10px 0 6px; }
+.tile { background: #E9E3E0; border-radius: 14px; display: grid; place-items: center; position: relative; }
+.tile svg { width: 60%; height: 60%; }
+.chip { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; padding: 5px 9px; border-radius: 999px; background: #fff; border: 1px solid #EAE3E1; }
+.chip.sel { background: #2A1E1F; color: #fff; border-color: #2A1E1F; }
+.dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.field { background: #fff; border: 1px solid #EAE3E1; border-radius: 12px; padding: 9px 11px; font-size: 13px; }
+.row { display: flex; gap: 6px; flex-wrap: wrap; }
+.slot { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid #F0EAE8; font-size: 12px; }
+.slot:last-child { border-bottom: 0; }
+.slot .name { width: 62px; font-weight: 600; }
+.slot .tile { width: 40px; height: 46px; border-radius: 9px; }
+.slot .add { width: 40px; height: 46px; border-radius: 9px; border: 1.5px dashed #B4A7A5; display: grid; place-items: center; color: #6B5F5E; }
+.card { background: #fff; border: 1px solid #EAE3E1; border-radius: 16px; overflow: hidden; }
+.pad { padding: 10px 12px; }
+.pill { position: absolute; font-size: 10px; font-weight: 800; color: #fff; background: #7F1D2D; padding: 4px 8px; border-radius: 999px; }
+.seg { display: flex; background: #EFE9E7; border-radius: 9px; padding: 2px; font-size: 11px; font-weight: 600; margin-bottom: 10px; }
+.seg span { flex: 1; text-align: center; padding: 5px 0; border-radius: 7px; color: #6B5F5E; }
+.seg span.on { background: #fff; color: #2A1E1F; box-shadow: 0 1px 2px rgba(0,0,0,.1); }
+.tag { position: absolute; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 9px; font-weight: 700; }
+.tag::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: #fff; border: 2.5px solid #7F1D2D; }
+.tag span { background: rgba(255,255,255,.94); padding: 1px 5px; border-radius: 5px; }
+.tabbar { position: absolute; left: 0; right: 0; bottom: 0; height: 66px; background: rgba(255,255,255,.96); border-top: 1px solid #EAE3E1; display: flex; justify-content: space-around; padding-top: 9px; font-size: 9px; color: #6B5F5E; z-index: 4; }
+.tabbar div { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.tabbar div.on { color: #7F1D2D; font-weight: 700; }
+.tabbar svg { width: 20px; height: 20px; }
+
+/* Sections */
+section { padding-block: 72px; }
+.sec-head { max-width: 640px; margin-bottom: 40px; }
+.sec-head h2 { font-size: clamp(32px, 4.4vw, 50px); margin-top: 10px; }
+.sec-head p { margin-top: 14px; color: var(--muted); font-size: 18px; }
+
+/* Walkthrough */
+.how { background: var(--card); border-block: 1px solid var(--line); }
+.how .grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 56px; align-items: center; }
+@media (max-width: 880px) { .how .grid { grid-template-columns: minmax(0, 1fr); } .how .stage { order: -1; } }
+.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; counter-reset: step; }
+.steps button {
+  all: unset; box-sizing: border-box; cursor: pointer; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 4px 14px;
+  width: 100%; padding: 18px 18px; border-radius: 16px; border: 1px solid transparent; position: relative; overflow: hidden;
+}
+.steps button:hover { background: var(--paper); }
+.steps button[aria-current="true"] { background: var(--paper); border-color: var(--line); }
+.steps .num { font-family: var(--display); font-size: 30px; line-height: 1; color: var(--line); grid-row: span 2; transition: color .3s; }
+.steps button[aria-current="true"] .num { color: var(--wine); }
+.steps h3 { font-family: var(--body); font-size: 19px; font-weight: 600; }
+.steps p { color: var(--muted); font-size: 15.5px; }
+.steps .bar { position: absolute; left: 18px; right: 18px; bottom: 8px; height: 2px; background: var(--blush); border-radius: 2px; overflow: hidden; display: none; }
+.steps button[aria-current="true"] .bar { display: block; }
+.steps .bar i { display: block; height: 100%; width: 0; background: var(--wine); }
+.steps button[aria-current="true"] .bar i { animation: fill var(--dwell, 4.5s) linear forwards; }
+.paused .steps .bar i { animation-play-state: paused; }
+@keyframes fill { to { width: 100%; } }
+@media (prefers-reduced-motion: reduce) { .steps .bar { display: none !important; } }
+.player { margin-top: 18px; display: flex; gap: 12px; align-items: center; font-size: 14px; color: var(--muted); }
+.player button { font: 600 14px var(--body); background: none; border: 1px solid var(--line); color: var(--ink); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+.player button:hover { border-color: var(--wine); color: var(--wine); }
+
+/* Features */
+.rack { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; }
+@media (max-width: 880px) { .rack { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .rack { grid-template-columns: minmax(0, 1fr); } }
+.feat { background: var(--paper); padding: 28px 26px 30px; display: grid; gap: 10px; align-content: start; }
+.feat svg { width: 30px; height: 30px; color: var(--wine); }
+.feat h3 { font-family: var(--body); font-size: 18px; font-weight: 600; }
+.feat p { color: var(--muted); font-size: 15.5px; }
+
+/* Download */
+.get .hangtag {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 40px; align-items: center;
+  background: var(--wine); color: #FBEFEF; border-radius: 28px; padding: 48px; position: relative; overflow: hidden;
+}
+@media (max-width: 760px) { .get .hangtag { grid-template-columns: minmax(0, 1fr); padding: 32px 24px; } }
+.get .hangtag::after { content: ""; position: absolute; top: 22px; right: 22px; width: 16px; height: 16px; border-radius: 50%; background: var(--paper); box-shadow: 0 0 0 4px rgba(255,255,255,.18); }
+.get h2 { font-size: clamp(32px, 4.4vw, 50px); color: #fff; }
+.get p { margin-top: 14px; color: #F1D9DC; max-width: 32em; }
+.get .eyebrow { color: #F4C7CD; }
+.get .btn-light { background: #fff; color: var(--wine); margin-top: 26px; }
+.get .btn-light:hover { background: #FBEFEF; }
+.qr { background: #fff; border-radius: 20px; padding: 16px; display: grid; justify-items: center; gap: 10px; color: var(--ink); width: 212px; max-width: 100%; }
+.qr #qrcode { width: 180px; height: 180px; }
+.qr #qrcode img, .qr #qrcode canvas { width: 180px !important; height: 180px !important; }
+.qr small { font-size: 13px; color: var(--muted); text-align: center; line-height: 1.35; }
+.status-pill { display: inline-block; margin-top: 18px; font-size: 13px; padding: 5px 12px; border-radius: 999px; background: rgba(255,255,255,.14); color: #fff; }
+
+/* Care label footer */
+footer { padding-block: 56px 70px; }
+.care { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+@media (max-width: 760px) { .care { grid-template-columns: minmax(0, 1fr); } }
+.label-tag { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 22px 24px; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); max-width: 360px; box-shadow: 0 1px 0 var(--line); }
+.label-tag b { display: block; font-family: var(--display); text-transform: none; letter-spacing: 0; font-size: 20px; color: var(--ink); margin-bottom: 12px; font-weight: 500; }
+.label-tag ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.label-tag li { display: flex; gap: 10px; align-items: center; }
+.label-tag svg { width: 18px; height: 18px; flex: none; color: var(--wine); }
+.foot-links { display: grid; gap: 10px; font-size: 15px; justify-items: start; }
+.foot-links a { color: var(--ink); }
+.copy { color: var(--muted); font-size: 14px; }
+
+/* Privacy page */
+#privacy-page { padding-block: 32px 80px; }
+#privacy-page article { max-width: 680px; }
+#privacy-page h1 { font-size: clamp(36px, 5vw, 56px); margin: 10px 0 8px; }
+#privacy-page h2 { font-size: 26px; margin: 34px 0 10px; }
+#privacy-page p, #privacy-page li { color: var(--ink); font-size: 16.5px; }
+#privacy-page p + p { margin-top: 12px; }
+#privacy-page ul { padding-left: 20px; display: grid; gap: 6px; }
+.updated { color: var(--muted); font-size: 14px; }
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="TheStyleFolio home">
+      <img src="data:image/webp;base64,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" alt="">
+      <span>TheStyleFolio</span>
+    </a>
+    <nav class="links" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a class="cta-link" href="#get">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home-page">
+  <div id="top"></div>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <div class="issue"><span><b>For iPhone</b></span><span>Now in beta</span><span>Your closet, your phone, your data</span></div>
+        <h1 class="masthead" id="hero-title">Every outfit you own, <em>beautifully</em> in your pocket.</h1>
+        <p class="lede">TheStyleFolio turns your closet into a catalog you can search in seconds. Snap your clothes, build looks, plan what to wear for every event, and keep a diary of the outfits you loved.</p>
+        <div class="actions">
+          <a class="btn btn-primary" id="hero-download" href="#get">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            <span id="hero-download-text">Join the iPhone beta</span>
+          </a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
+        </div>
+        <p class="note">Free while in beta. No ads. Your wardrobe stays on your phone.</p>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="phone"><div class="screen" id="hero-screen"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how" aria-labelledby="how-title">
+    <div class="wrap grid">
+      <div>
+        <div class="sec-head">
+          <div class="eyebrow">How it works</div>
+          <h2 id="how-title">From closet to calendar in four steps</h2>
+        </div>
+        <ol class="steps" id="steps">
+          <li><button type="button" data-step="0" aria-current="true">
+            <span class="num">1</span>
+            <h3>Snap your closet</h3>
+            <p>Take a photo and the app cuts the piece out, reads its colors and suggests a category. A name or a category is enough if you'd rather skip the photo.</p>
+            <span class="bar"><i></i></span>
+          </button></li>
+          <li><button type="button" data-step="1" aria-current="false">
+            <span class="num">2</span>
+            <h3>Build looks</h3>
+            <p>Pick a top, bottom, shoes and jewelry from your closet. Add a borrowed piece too, and keep it out of your closet.</p>
+            <span class="bar"><i></i></span>
+          </button></li>
+          <li><button type="button" data-step="2" aria-current="false">
+            <span class="num">3</span>
+            <h3>Plan for events</h3>
+            <p>Add the wedding, the party or the trip, plan a look for it, and get a reminder two days before and the morning of.</p>
+            <span class="bar"><i></i></span>
+          </button></li>
+          <li><button type="button" data-step="3" aria-current="false">
+            <span class="num">4</span>
+            <h3>Keep a style diary</h3>
+            <p>Add a photo of what you wore, tag the pieces and the event, and see everywhere you've worn it.</p>
+            <span class="bar"><i></i></span>
+          </button></li>
+        </ol>
+        <div class="player"><button type="button" id="play-toggle" aria-pressed="false">Pause</button><span id="play-state">Playing the walkthrough</span></div>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="phone"><div class="screen" id="demo-screen"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">What's inside</div>
+        <h2 id="features-title">Made for real wardrobes</h2>
+        <p>Kurtas and blazers, sneakers and juttis, kundan sets and watches. Organize everything the way you actually think about it.</p>
+      </div>
+      <div class="rack">
+        <div class="feat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6a2 2 0 1 1 2-2"/><path d="M12 6v2L3 15h18l-9-7"/></svg>
+          <h3>A closet you can search</h3>
+          <p>Nested categories like Jewelry › Indian › Kundan, tick-box filters, and plain searches such as "pink dress" or "gold earrings".</p>
+        </div>
+        <div class="feat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18"/><path d="M5 9h7M5 15h7"/></svg>
+          <h3>Colors read from the photo</h3>
+          <p>The app names the colors it sees, from Navy to Rose. Type your own when it's a shade only you know.</p>
+        </div>
+        <div class="feat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h6v14H4zM10 5h4v14h-4zM14 6l4-1 3 13-4 1z"/></svg>
+          <h3>Look books</h3>
+          <p>Collect looks for a trip, a season or a wedding. Mix outfits you built, diary photos and ideas you saved.</p>
+        </div>
+        <div class="feat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><circle cx="16" cy="15" r="1.5"/></svg>
+          <h3>Events and reminders</h3>
+          <p>Color-coded event categories, a countdown on Home, and the planned look one tap away.</p>
+        </div>
+        <div class="feat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+          <h3>Share a look as a picture</h3>
+          <p>A clean card sized for Instagram and TikTok. Prices, brands and sizes never appear on it.</p>
+        </div>
+        <div class="feat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          <h3>Private by design</h3>
+          <p>Everything lives on your iPhone. No ads, nothing sold. Back up to your own iCloud Drive whenever you like.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="get" id="get" aria-labelledby="get-title">
+    <div class="wrap">
+      <div class="hangtag">
+        <div>
+          <div class="eyebrow">Get the app</div>
+          <h2 id="get-title">Try TheStyleFolio on your iPhone</h2>
+          <p id="get-copy">We're opening a small beta through Apple's TestFlight. Install the free TestFlight app, then tap the button or scan the code to join.</p>
+          <a class="btn btn-light" id="get-download" href="#get">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            <span id="get-download-text">Join the iPhone beta</span>
+          </a>
+          <div><span class="status-pill" id="status-pill">iPhone, iOS 17 or later · Android later</span></div>
+        </div>
+        <div class="qr">
+          <div id="qrcode" role="img" aria-label="QR code for the download link"></div>
+          <small id="qr-caption">Scan with your iPhone camera</small>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<main id="privacy-page" hidden>
+  <div class="wrap">
+    <article>
+      <a href="#top" id="back-home">← Back to TheStyleFolio</a>
+      <h1>Privacy policy</h1>
+      <p class="updated">Last updated October 9, 2026</p>
+
+      <h2>The short version</h2>
+      <p>TheStyleFolio keeps your wardrobe on your iPhone. We don't collect your photos, your items, your looks or your events, we don't show ads, and we don't sell or share data.</p>
+
+      <h2>What stays on your phone</h2>
+      <p>Everything you add to the app is stored only on your device: photos of your clothes, item details, categories, looks, look books, style diary entries, events, notes and reminders. We have no copy of it.</p>
+      <ul>
+        <li><b>Camera and photos.</b> The app uses the camera and your photo library only when you choose to add a picture. Photos you take in the app are saved to a TheStyleFolio album in your own photo library.</li>
+        <li><b>Notifications.</b> Event reminders are scheduled on your phone. Nothing is sent to us.</li>
+        <li><b>Backups.</b> When you back up, the app writes a file to a place you pick, such as iCloud Drive or Files. That file is yours and goes only where you send it.</li>
+        <li><b>Sharing.</b> When you share a look as a picture, it goes only to the app or person you choose.</li>
+      </ul>
+
+      <h2>Your account</h2>
+      <p>If you sign in, we keep only what's needed for signing in, such as your name and email from Sign in with Apple. Your wardrobe is not linked to your account until optional cloud sync arrives in a later version, and you'll be asked before anything is uploaded.</p>
+
+      <h2>Analytics and tracking</h2>
+      <p>The app has no advertising, no third-party analytics and no tracking across other apps or websites. If you join the beta, Apple's TestFlight may send us crash reports and feedback you choose to submit, under Apple's own privacy policy.</p>
+
+      <h2>Children</h2>
+      <p>TheStyleFolio is not directed to children under 13 and doesn't knowingly collect information from them.</p>
+
+      <h2>Deleting your data</h2>
+      <p>Deleting the app removes everything it stored on your phone. Backup files you saved elsewhere stay until you delete them. To delete your sign-in details, contact us at the address below.</p>
+
+      <h2>Changes and contact</h2>
+      <p>If this policy changes, we'll update the date above and tell you in the app before any change that affects your data.</p>
+      <p>Questions: <span id="contact-email-privacy">hello@vibandi.com</span></p>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap care">
+    <div class="label-tag" aria-label="Care instructions">
+      <b>TheStyleFolio</b>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/></svg>Keep on your phone</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Back up weekly</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg>Wear often, rewear proudly</li>
+      </ul>
+    </div>
+    <div class="foot-links">
+      <a href="#privacy">Privacy policy</a>
+      <a href="/">A Vibandi LLC product</a>
+      <a href="#get">Get the app</a>
+      <span>Contact: <span id="contact-email">hello@vibandi.com</span></span>
+      <p class="copy">© <span id="year">2026</span> <span id="company">Vibandi LLC</span>. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+/* ===== Edit these when the app is live ===== */
+const SITE = {
+  // TestFlight public link now, App Store link later. Leave empty to point the QR code at this page.
+  downloadUrl: "",
+  contactEmail: "hello@vibandi.com",
+  company: "Vibandi LLC",
+};
+/* =========================================== */
+
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("company").textContent = SITE.company;
+document.getElementById("contact-email").textContent = SITE.contactEmail;
+document.getElementById("contact-email-privacy").textContent = SITE.contactEmail;
+
+const live = /^https?:\/\//.test(SITE.downloadUrl);
+const isAppStore = /apps\.apple\.com/.test(SITE.downloadUrl);
+for (const id of ["hero-download", "get-download"]) {
+  const a = document.getElementById(id);
+  if (live) { a.href = SITE.downloadUrl; a.target = "_blank"; a.rel = "noopener"; }
+}
+if (isAppStore) {
+  for (const id of ["hero-download-text", "get-download-text"]) document.getElementById(id).textContent = "Download for iPhone";
+  document.getElementById("get-copy").textContent = "Free on the App Store. Tap the button on your iPhone, or scan the code with its camera.";
+} else if (!live) {
+  document.getElementById("get-copy").textContent = "We're opening a small beta through Apple's TestFlight very soon. Scan the code to keep this page on your phone, and check back for the invite link.";
+  document.getElementById("get-download-text").textContent = "Beta opening soon";
+  document.getElementById("qr-caption").textContent = "Scan to open this page on your iPhone";
+}
+try {
+  const target = live ? SITE.downloadUrl : (location.protocol.startsWith("http") ? location.origin + location.pathname : "https://vibandi.com/stylefolio/");
+  new QRCode(document.getElementById("qrcode"), { text: target, width: 360, height: 360, colorDark: "#2A1E1F", colorLight: "#FFFFFF", correctLevel: QRCode.CorrectLevel.M });
+} catch (e) {
+  document.getElementById("qr-caption").textContent = "Open this page on your iPhone to get the app";
+}
+
+/* Privacy page as #privacy */
+function route() {
+  const priv = location.hash === "#privacy";
+  document.getElementById("home-page").hidden = priv;
+  document.getElementById("privacy-page").hidden = !priv;
+  if (priv) window.scrollTo(0, 0);
+}
+addEventListener("hashchange", route); route();
+document.getElementById("back-home").addEventListener("click", (e) => { e.preventDefault(); history.pushState("", "", location.pathname); route(); window.scrollTo(0, 0); });
+
+/* ===== Phone screens ===== */
+const G = {
+  dress: (c) => `<svg viewBox="0 0 100 100"><path fill="${c}" d="M40 10h20l3 12-7 6 16 60H28l16-60-7-6z"/><path fill="rgba(255,255,255,.25)" d="M44 28h12l-2 6h-8z"/></svg>`,
+  top: (c) => `<svg viewBox="0 0 100 100"><path fill="${c}" d="M36 16l8-4c3 5 9 5 12 0l8 4 18 14-8 10-8-5v50H34V35l-8 5-8-10z"/></svg>`,
+  pants: (c) => `<svg viewBox="0 0 100 100"><path fill="${c}" d="M30 12h40l4 76H58l-8-52-8 52H26z"/></svg>`,
+  heels: (c) => `<svg viewBox="0 0 100 100"><path fill="${c}" d="M14 66c8-2 18-14 26-26 4-6 12-6 16 0l26 22v8H62l-4 14h-6l1-14H30c-8 0-14 2-16 4z"/></svg>`,
+  bag: (c) => `<svg viewBox="0 0 100 100"><path fill="none" stroke="${c}" stroke-width="6" d="M36 40c0-14 28-14 28 0"/><rect x="20" y="38" width="60" height="44" rx="8" fill="${c}"/><rect x="44" y="52" width="12" height="7" rx="2" fill="rgba(255,255,255,.55)"/></svg>`,
+  earrings: (c) => `<svg viewBox="0 0 100 100"><g fill="${c}"><circle cx="34" cy="26" r="6"/><path d="M34 34l12 20-12 22-12-22z"/><circle cx="66" cy="26" r="6"/><path d="M66 34l12 20-12 22-12-22z"/></g></svg>`,
+};
+const tabs = (on) => `<div class="tabbar">${[
+  ["Home", '<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>'],
+  ["Closet", '<path d="M12 6a2 2 0 1 1 2-2"/><path d="M12 6v2L3 15h18l-9-7"/>'],
+  ["Looks", '<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 4v16"/>'],
+  ["Calendar", '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/>'],
+  ["Social", '<circle cx="9" cy="9" r="3"/><circle cx="17" cy="11" r="2.5"/><path d="M3 20c1-4 4-6 6-6s5 2 6 6"/>'],
+].map(([n, p]) => `<div class="${n === on ? "on" : ""}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${p}</svg>${n}</div>`).join("")}</div>`;
+
+const VIEWS = [
+  // 1. Add an item
+  `<div class="view">
+    <div class="navbar"><span class="dim">Cancel</span><b>New item</b><span class="act">Save</span></div>
+    <div class="tile" style="height:190px;background:#EFE6E3">${G.dress("#C9616F")}
+      <span class="chip" style="position:absolute;left:8px;bottom:8px;font-size:10px">Cut-out on</span></div>
+    <div class="label">Name</div>
+    <div class="field">Rose silk midi dress</div>
+    <div class="label">Category</div>
+    <div class="row"><span class="chip sel">Dresses</span><span class="chip" style="color:#6B5F5E">Suggested</span></div>
+    <div class="label">Colors · read from your photo</div>
+    <div class="row"><span class="chip"><i class="dot" style="background:#C9616F"></i>Rose</span><span class="chip"><i class="dot" style="background:#C9A24A"></i>Gold</span><span class="chip" style="color:#7F1D2D">Change</span></div>
+  </div>`,
+  // 2. Build a look
+  `<div class="view">
+    <div class="navbar"><span class="dim">Cancel</span><b>Build a look</b><span class="act">Save</span></div>
+    <div class="card pad">
+      <div class="slot"><span class="name">Dress</span><span class="tile">${G.dress("#C9616F")}</span></div>
+      <div class="slot"><span class="name">Shoes</span><span class="tile">${G.heels("#C9A24A")}</span></div>
+      <div class="slot"><span class="name">Bag</span><span class="tile">${G.bag("#2A1E1F")}</span></div>
+      <div class="slot"><span class="name">Jewelry</span><span class="tile">${G.earrings("#C9A24A")}</span><span class="add">+</span></div>
+      <div class="slot"><span class="name">Layer</span><span class="add">+</span></div>
+    </div>
+    <div class="label">Name</div>
+    <div class="field">Diwali dinner</div>
+    <div class="label">Event (optional)</div>
+    <div class="field" style="display:flex;justify-content:space-between"><span><i class="dot" style="background:#C9A24A"></i>&nbsp; Diwali at Priya's</span><span style="color:#6B5F5E">⌄</span></div>
+  </div>`,
+  // 3. Home with the next event
+  `<div class="view">
+    <div class="app-title"><i></i>TheStyleFolio</div>
+    <div style="font-size:12px;color:#6B5F5E;margin-bottom:8px"><b style="color:#2A1E1F;font-size:15px">2 events</b> in the next 30 days</div>
+    <div class="card">
+      <div style="height:96px;background:linear-gradient(135deg,#E8C27A,#C9616F);position:relative">
+        <span class="chip" style="position:absolute;left:8px;top:8px;font-size:10px"><i class="dot" style="background:#C9A24A"></i>Festival</span>
+        <span class="pill" style="right:8px;top:8px">In 9 days</span>
+      </div>
+      <div class="pad">
+        <div style="font-weight:700;font-size:14px">Diwali at Priya's</div>
+        <div style="font-size:11px;color:#6B5F5E">Sat, Oct 31 · 7:00 PM</div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:8px">
+          <span class="tile" style="width:30px;height:30px;border-radius:7px">${G.dress("#C9616F")}</span>
+          <span style="font-size:12px;font-weight:600">Diwali dinner</span>
+        </div>
+      </div>
+    </div>
+    <div class="label" style="margin-top:14px">Recently added</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+      <span class="tile" style="aspect-ratio:1">${G.top("#3E5C8A")}</span>
+      <span class="tile" style="aspect-ratio:1">${G.pants("#2A1E1F")}</span>
+      <span class="tile" style="aspect-ratio:1">${G.bag("#A6683C")}</span>
+    </div>
+  </div>`,
+  // 4. Style diary
+  `<div class="view">
+    <div class="app-title"><i></i>Looks</div>
+    <div class="seg"><span>Looks</span><span class="on">Style Diary</span><span>Look books</span></div>
+    <div class="card">
+      <div style="height:230px;background:linear-gradient(160deg,#EADBD6,#D9C3BC);position:relative;display:grid;place-items:center">
+        <svg viewBox="0 0 100 160" style="height:88%"><circle cx="50" cy="20" r="12" fill="#B98B73"/><path d="M38 34h24l4 14-6 4 18 88H22l18-88-6-4z" fill="#C9616F"/><path d="M36 140h10v12H34zM54 140h10l2 12H54z" fill="#C9A24A"/></svg>
+        <span class="tag" style="left:54%;top:46%"><span>Rose silk midi</span></span>
+        <span class="tag" style="left:16%;top:80%"><span>Gold heels</span></span>
+      </div>
+      <div class="pad">
+        <div style="font-weight:700;font-size:14px">Rohan's sangeet</div>
+        <div style="font-size:11px;color:#6B5F5E">Diary · Oct 3, 2026 · Worn to 1 event</div>
+      </div>
+    </div>
+  </div>`,
+];
+const TABS_FOR = ["Closet", "Looks", "Home", "Looks"];
+
+function mount(screen, startIndex) {
+  screen.innerHTML = `<div class="island"></div><div class="status"><span>9:41</span><span>●●● ▮</span></div>` + VIEWS.join("") + `<div id="tabs-${screen.id}"></div>`;
+  const views = [...screen.querySelectorAll(".view")];
+  const tabHost = screen.querySelector(`#tabs-${screen.id}`);
+  const show = (i) => {
+    views.forEach((v, k) => v.classList.toggle("on", k === i));
+    tabHost.innerHTML = i === 0 || i === 1 ? "" : tabs(TABS_FOR[i]);
+  };
+  show(startIndex);
+  return show;
+}
+
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const DWELL = 4500;
+document.documentElement.style.setProperty("--dwell", DWELL + "ms");
+
+// Hero phone: Home screen, gently cycling.
+const heroShow = mount(document.getElementById("hero-screen"), 2);
+if (!reduce) { let h = 2; setInterval(() => { h = (h + 1) % VIEWS.length; heroShow(h); }, 5200); }
+
+// Walkthrough phone, synced with the steps.
+const demoShow = mount(document.getElementById("demo-screen"), 0);
+const buttons = [...document.querySelectorAll("#steps button")];
+const how = document.getElementById("how");
+const toggle = document.getElementById("play-toggle");
+const stateText = document.getElementById("play-state");
+let current = 0, playing = !reduce, timer = null;
+
+function select(i) {
+  current = i;
+  buttons.forEach((b, k) => {
+    b.setAttribute("aria-current", k === i ? "true" : "false");
+    const bar = b.querySelector(".bar i"); bar.style.animation = "none"; void bar.offsetWidth; bar.style.animation = "";
+  });
+  demoShow(i);
+  schedule();
+}
+function schedule() {
+  clearTimeout(timer);
+  if (playing) timer = setTimeout(() => select((current + 1) % buttons.length), DWELL);
+}
+function setPlaying(p) {
+  playing = p;
+  how.classList.toggle("paused", !p);
+  toggle.textContent = p ? "Pause" : "Play";
+  toggle.setAttribute("aria-pressed", String(!p));
+  stateText.textContent = p ? "Playing the walkthrough" : "Tap a step to see it";
+  schedule();
+}
+buttons.forEach((b, i) => b.addEventListener("click", () => { select(i); }));
+toggle.addEventListener("click", () => setPlaying(!playing));
+setPlaying(playing);
+select(0);
+</script>
+</body>
+</html>
